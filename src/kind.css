@@ -1,0 +1,199 @@
+.first-selection {
+    width: 100vw;
+    /* 화면 너비에 맞게 설정 */
+    height: 100vh;
+    /* 화면 높이에 맞게 설정 */
+    flex-shrink: 0;
+    background-image: url('./images/MainBackground.png');
+    /* 배경 이미지 설정 */
+    background-size: cover;
+    /* 배경 이미지를 화면에 맞게 조정 */
+    background-position: center;
+    /* 배경 이미지를 가운데로 정렬 */
+    background-repeat: no-repeat;
+    /* 배경 이미지 반복 방지 */
+    display: flex;
+    justify-content: center;
+    /* 수평 가운데 정렬 */
+
+}
+
+.Mainpages {
+    width: 100vw;
+    /* 화면 너비에 맞게 설정 */
+    height: 100vh;
+    /* 화면 높이에 맞게 설정 */
+}
+
+.container {
+    width: 18.9375rem;
+    height: 38.125rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.5rem;
+}
+
+.quote-box {
+    width: 18.9375rem;
+    height: 15.5rem;
+    flex-shrink: 0;
+    fill: #F8F3A5;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2px;
+    flex-shrink: 0;
+    stroke-width: 2px;
+    stroke: #F6F4A5;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 3.56rem;
+}
+
+.title {
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.description {
+    width: 14.6875rem;
+    height: 3.8125rem;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.YoungSection {
+    width: 25.1875rem;
+    height: 253.4375rem;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.story {
+    width: 15rem;
+    height: 6.625rem;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Pretendard;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5.06rem;
+}
+
+.BrightDoor1 {
+    flex-shrink: 0;
+    border-radius: 2.5rem;
+    margin-top: 0.7rem;
+}
+
+.BrightDoor2 {
+    flex-shrink: 0;
+    border-radius: 2.5rem;
+    margin-top: 21rem;
+}
+
+.story2 {
+    display: flex;
+    width: 15.375rem;
+    height: 4.625rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: #000;
+
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 27rem;
+}
+
+.story3 {
+    display: flex;
+    width: 15.375rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 24.56rem;
+    color: #000;
+
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.story4 {
+    width: 15.375rem;
+    height: 5.375rem;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.DoorButton{
+    width: 14.4375rem;
+    height: 34.875rem;
+    flex-shrink: 0;
+    border: none; /* 테두리 제거 */
+    outline: none; /* 외곽선 제거 */
+    background-color: transparent; /* 배경색을 투명하게 설정 */
+    margin-top: 2rem;
+
+}
+
+.DoorButton-image{
+    width: 13rem;
+    height: 34rem;
+    flex-shrink: 0;
+    border: none; /* 테두리 제거 */
+    outline: none; /* 외곽선 제거 */
+    background-color: transparent; /* 배경색을 투명하게 설정 */
+
+
+}
