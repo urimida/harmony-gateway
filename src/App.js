@@ -8,6 +8,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<FirstSelection />} />
         <Route path="/who" element={<FirstSelection />} />
         <Route path="/young-section" element={<YoungSection />} />
         {/* Add Route for "/young-section" */}
