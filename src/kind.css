@@ -337,7 +337,6 @@
 
 .Home {
     display: flex;
-    width: 24.375rem;
     height: 52.75rem;
     flex-direction: column;
     justify-content: center;
@@ -347,7 +346,6 @@
 
 .Success {
     display: flex;
-    width: 24.375rem;
     height: 52.75rem;
     flex-direction: column;
     justify-content: center;
