@@ -63,6 +63,12 @@
     margin-top: 3.56rem;
 }
 
+.yellowbox {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
 .title {
     flex-shrink: 0;
     color: #000;
@@ -74,9 +80,9 @@
     line-height: normal;
 }
 
+
 .description {
-    width: 14.6875rem;
-    height: 3.8125rem;
+
     flex-shrink: 0;
     color: #000;
     text-align: center;
@@ -94,12 +100,10 @@
 .YoungSection {
     width: 100%;
     height: 253.4375rem;
-    background: #FFF;
+    background: #FCF6DD;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    /* 추가: 수직 가운데 정렬 */
     text-align: center;
     /* 추가: 내부 텍스트 정렬 */
 }
@@ -107,22 +111,23 @@
 
 
 .story {
-    width: 15rem;
-    height: 6.625rem;
+    width: 19rem;
+    height: 7.5rem;
     flex-shrink: 0;
     color: #000;
     font-family: Pretendard;
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-top: 5.06rem;
+    margin-top: 4.87rem;
+    text-align: left;
 }
 
 .BrightDoor1 {
     flex-shrink: 0;
     border-radius: 2.5rem;
-    margin-top: 0.7rem;
+    margin-top: 2.63rem;
 
 }
 
@@ -222,4 +227,207 @@
     src: url('../src/fonts/Pretendard-Medium.woff') format('woff2');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard-Light';
+    src: url('../src/fonts/Pretendard-Light.woff') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ElderSection {
+    height: 329.125rem;
+    background: #5E5773;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story-elder1,
+.story-elder2,
+.story-elder3,
+.story-elder4 {
+    color: #FFF;
+    font-family: Pretendard-Light;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.3rem;
+    /* 줄간격을 2배로 설정 */
+    flex-shrink: 0;
+}
+
+.story-elder1 {
+    width: 20.6875rem;
+    height: 7.875rem;
+    margin-top: 5.44rem;
+}
+
+.story-elder2 {
+    width: 17rem;
+    height: 8.9375rem;
+    margin-top: 0rem;
+}
+
+.story-elder3 {
+    width: 19.625rem;
+    height: 8.6875rem;
+    margin-top: 1.75rem;
+}
+
+
+.story-elder4 {
+    width: 18rem;
+    height: 8.125rem;
+    flex-shrink: 0;
+    margin-top: 30.81rem;
+    margin-bottom: 30.81rem;
+}
+
+.Snow {
+    width: 21.625rem;
+    height: 36.5625rem;
+    flex-shrink: 0;
+    margin-bottom: 32.4rem;
+}
+
+.Hand {
+    width: 22.625rem;
+    height: 37.5625rem;
+    flex-shrink: 0;
+    margin-top: 40rem;
+}
+
+.story2-elder {
+    display: flex;
+    width: 15.375rem;
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 24.56rem;
+    color: #ffffff;
+
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.story3-elder {
+    width: 15.375rem;
+    height: 5.375rem;
+    flex-shrink: 0;
+    color: #ffffff;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.Home {
+    display: flex;
+    width: 24.375rem;
+    height: 52.75rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FCF6DD;
+}
+
+.Success {
+    display: flex;
+    width: 24.375rem;
+    height: 52.75rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FCF6DD;
+}
+
+.BigLogoButton {
+    width: 19.75rem;
+    height: 8.875rem;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    /* 테두리 제거 */
+    outline: none;
+    /* 외곽선 제거 */
+    background-color: transparent;
+    /* 배경색을 투명하게 설정 */
+}
+
+
+.MidiumLogoButton {
+    width: 18.875rem;
+    height: 5.9375rem;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    /* 테두리 제거 */
+    outline: none;
+    /* 외곽선 제거 */
+    background-color: transparent;
+    /* 배경색을 투명하게 설정 */
+}
+
+.BigLogo {
+    width: 19.75rem;
+    height: 8.875rem;
+    flex-shrink: 0;
+}
+
+
+.MidiumLogo {
+    width: 18.875rem;
+    height: 5.9375rem;
+    flex-shrink: 0;
+
+}
+
+.WelomeMessage {
+    display: flex;
+    width: 17rem;
+    height: 7rem;
+    padding: 0rem 1.006rem 0.30256rem 0rem;
+    align-items: center;
+    flex-shrink: 0;
+    color: #000;
+    text-align:left;
+    font-family: Pretendard;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.WelomeMessage2 {
+    width: 17rem;
+    height: 14rem;
+    padding: 0rem 1.006rem 0.30256rem 0rem;
+    align-items: center;
+    flex-shrink: 0;
+    color: #000;
+    text-align: left;
+    font-family: Pretendard;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 2rem;
 }

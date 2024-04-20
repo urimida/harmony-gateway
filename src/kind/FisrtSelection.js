@@ -12,11 +12,10 @@ const FirstSelection = () => {
     };
 
     const handleElderButtonClick = () => {
-        showMessage('The elder', 'who wants to become proficient in digital technology.');
+        navigate("/elder-section");
     };
 
     const handleYoungButtonClick = () => {
-        // 두 번째 버튼을 누를 때 YoungSection 페이지로 이동
         navigate("/young-section");
     };
 
@@ -32,14 +31,14 @@ const FirstSelection = () => {
                     </div>
                 </div>
                 <div className="separator">
-                    <img src={separatorImage} alt="Separator" /> {/* 구분선 이미지를 <img> 요소로 삽입 */}
+                    <img src={separatorImage} alt="Separator" />
                 </div>
                 <div className="quote-box" style={{ backgroundImage: `url(${Yellowbox})` }} onClick={handleYoungButtonClick}>
                     <div className="title">
                         The young people
                     </div>
                     <div className="description">
-                        who wants to acquire wisdom.
+                        who wants to<br />acquire wisdom.
                     </div>
                 </div>
             </div>

@@ -12,7 +12,7 @@ const YoungSection = () => {
     return (
         <div className="YoungSection">
             <div className="story">
-                Hello, thank you for coming on time. We can have a great time in this room. I installed a button that automatically opens the door. Wasn't it much more convenient than pushing it open?
+            Welcome to the Harmony Room! Thanks for arriving on time. <br/> <br/> Find the button to open the door automatically. Isn't it convenient?
             </div>
             <img src={BrightDoor} className="BrightDoor1" alt="BrightDoor" />
             <img src={BrightDoor2} className="BrightDoor2" alt="BrightDoor" />
