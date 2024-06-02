@@ -1,12 +1,11 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // React Router의 useNavigate 훅 임포트
 import '../kind.css';
 import Tabs from "./Tabs";
 import MissionStatusImg from '../images/MissionStatus.png';
 
 
 const Home = () => {
-    const navigate = useNavigate();
+
 
     return (
         <div className="Home">
