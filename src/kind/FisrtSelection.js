@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom"; // React Router의 useNavigate 훅 임포트
 import '../kind.css';
 import Yellowbox from '../images/YellowBox.png';
+import WhiteBox from  '../images/WhiteBox.png';
 import separatorImage from '../images/separatorImage.png';
 
 const FirstSelection = () => {
@@ -11,22 +12,16 @@ const FirstSelection = () => {
         <div className="first-selection">
             <div className="container">
                 <div className="quote-box" style={{ backgroundImage: `url(${Yellowbox})` }} onClick={() => navigate('/elder-section')}>
-                    <div className="title">
-                        The elder
-                    </div>
-                    <div className="description">
-                        who wants to become proficient in digital technology.
+                    <div className="title1">
+                    Seeker of seasoned wisdom
                     </div>
                 </div>
                 <div className="separator">
                     <img src={separatorImage} alt="Separator" />
                 </div>
-                <div className="quote-box" style={{ backgroundImage: `url(${Yellowbox})` }}  onClick={() => navigate('/young-section')}>
-                    <div className="title">
-                        The young people
-                    </div>
-                    <div className="description">
-                        who wants to<br />acquire wisdom.
+                <div className="quote-box" style={{ backgroundImage: `url(${WhiteBox})` }}  onClick={() => navigate('/young-section')}>
+                    <div className="title2">
+                    Digital technology proficiency aspirant
                     </div>
                 </div>
             </div>

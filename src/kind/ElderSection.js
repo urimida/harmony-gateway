@@ -1,13 +1,29 @@
-import React from "react";
-import { useNavigate } from "react-router-dom"; // React Router의 useNavigate 훅 임포트
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import '../kind.css';
 import Snow from '../images/Snow.png';
 import Hand from '../images/Hand.png';
-import DoorButton from '../images/DoorButton.png'
+import DoorButton from '../images/Hand.png';
+import DoorButtonClicked from '../images/DoorButton.png';
 
 const ElderSection = () => {
+    const [buttonImage, setButtonImage] = useState(DoorButton);
+    const [clicked, setClicked] = useState(false); // 클릭 여부를 나타내는 상태 추가
+    const navigate = useNavigate();
 
-    const navigate = useNavigate(); // useNavigate 훅을 사용하여 navigate 함수 가져오기
+    const handleClick = () => {
+        // 첫 번째 클릭일 때
+        if (!clicked) {
+            // 이미지 변경
+            setButtonImage(DoorButtonClicked);
+            // 클릭 여부 변경
+            setClicked(true);
+        } else {
+            // 두 번째 클릭일 때
+            // 원하는 경로로 이동
+            navigate('/explaination1');
+        }
+    };
 
     return (
         <div className="ElderSection">
@@ -29,13 +45,12 @@ const ElderSection = () => {
                 If you could,
             </div>
             <div className="story3-elder">
-                Please press this button.
+                Please press the button.
             </div>
-            <button className="DoorButton" onClick={() => navigate('/success')}>
-                <img src={DoorButton} className="DoorButton-image" alt="DoorButton" />
+            <button className="DoorButton" onClick={handleClick}>
+                <img src={buttonImage} className="HandButton" alt="DoorButton" />
             </button>
         </div>
-
     );
 };
 
