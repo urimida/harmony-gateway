@@ -169,7 +169,6 @@
     flex-shrink: 0;
     margin-top: 24.56rem;
     color: #000;
-
     text-align: center;
     font-family: Pretendard;
     font-size: 1.25rem;
@@ -184,7 +183,7 @@
     flex-shrink: 0;
     color: #000;
     text-align: center;
-    font-family: Pretendard;
+    font-family: Pretendard-Bold;
     font-size: 2.25rem;
     font-style: normal;
     font-weight: 700;
@@ -522,16 +521,21 @@
 }
 
 .tab-container {
-    width: 100%; /* 화면의 전체 너비를 차지하도록 설정 */
+    width: 100%;
+    /* 화면의 전체 너비를 차지하도록 설정 */
     height: 5.07813rem;
     flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed; /* 화면에 고정 */
-    bottom: 0; /* 화면의 바닥에 위치 */
-    background-color: white; /* 배경색 추가 */
-    z-index: 1000; /* 다른 요소 위에 위치 */
+    position: fixed;
+    /* 화면에 고정 */
+    bottom: 0;
+    /* 화면의 바닥에 위치 */
+    background-color: white;
+    /* 배경색 추가 */
+    z-index: 1000;
+    /* 다른 요소 위에 위치 */
 }
 
 .tabs {
@@ -606,32 +610,38 @@
     width: 24.375rem;
     height: 20.25rem;
     display: flex;
-    flex-direction: column; /* 내부 요소들을 세로로 배치 */
-    align-items: center; /* 가로 중앙 정렬 */
-    justify-content: space-between; /* 내부 요소들 사이에 공간 배분 */
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+
+    align-items: center;
+    background-color: #FFF;
+    justify-content: center;
 }
 
 .HomeComponent1-2 {
     width: 23rem;
-    height:10rem;
+    height: 10rem;
     flex-shrink: 0;
-    display: flex; /* 요소들을 가로로 배치 */
+    display: flex;
+    /* 요소들을 가로로 배치 */
     flex-direction: row;
+    justify-content: space-between;
+    /* 요소들 사이에 동일한 간격을 둠 */
+    /* justify-content: space-around; /* 양 끝에 반만큼의 간격을 둠 */
+    align-items: center;
+    /* 가로 중앙 정렬 */
 }
 
 
 .MyPoints {
-    width: 5.25rem;
+    width: 8rem;
     height: 3rem;
     display: flex;
-    flex-direction: column; /* 요소들을 세로로 배치 */
-    justify-content: center; /* 세로 가운데 정렬 */
-    align-items: center; /* 가로 가운데 정렬 */
+    flex-direction: column;
+    /* 요소들을 세로로 배치 */
+    justify-content: center;
+    /* 세로 가운데 정렬 */
+    align-items: center;
+    /* 가로 가운데 정렬 */
     margin-bottom: 20px;
 }
 
@@ -685,6 +695,20 @@
     font-weight: 500;
     line-height: 100%;
     /* 0.9375rem */
+    margin-top: 0.3rem;
+}
+
+.HomeComponent2 {
+    width: 24.375rem;
+    height: 32.125rem;
+    display: flex;
+    flex-direction: column;
+    /* 내부 요소들을 세로로 배치 */
+    align-items: center;
+    /* 가로 중앙 정렬 */
+    background-color: white;
+    justify-content: center;
+    margin-top: 1rem;
 }
 
 .TodayHarmonyStory {
@@ -704,18 +728,19 @@
     width: 15.3125rem;
     height: 13.6875rem;
     flex-shrink: 0;
-    fill: linear-gradient(165deg, rgba(255, 236, 133, 0.40) -37.36%, rgba(177, 73, 240, 0.40) 75.37%);
+}
+
+.HarmonyStoryTitle {
+    width: 9.4375rem;
+    height: 10.375rem;
+    flex-shrink: 0;
     color: #5C2380;
-    font-family: Ribeye;
+    font-family: Pretendard;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
 
-.HarmonyStoryTitle {
-    color: #1a73e8;
-    text-decoration: none;
 }
 
 .HarmonyStoryTitle:hover {

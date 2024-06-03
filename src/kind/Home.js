@@ -2,10 +2,10 @@ import React from "react";
 import '../kind.css';
 import Tabs from "./Tabs";
 import MissionStatusImg from '../images/MissionStatus.png';
+import NewsBox from '../images/NewsBox.png';
 
 
 const Home = () => {
-
 
     return (
         <div className="Home">
@@ -36,12 +36,12 @@ const Home = () => {
             </div>
 
 
-            <div className="HomeComponent1">
+            <div className="HomeComponent2">
                 <div className="TodayHarmonyStory">
                     Today’s Harmony Story
-                </div>9
+                </div>
 
-                <div className="StoryComponent">
+                <div className="StoryComponent" style={{ backgroundImage: `url(${NewsBox})` }}>
                     <a href="https://n.news.naver.com/article/052/0002042417?sid=102" className="HarmonyStoryTitle">
                         The children who helped the grandfather collecting waste paper.
                     </a>
