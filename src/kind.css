@@ -695,20 +695,19 @@
     font-weight: 500;
     line-height: 100%;
     /* 0.9375rem */
-    margin-top: 0.3rem;
+    margin-top: 1.4rem;
 }
 
 .HomeComponent2 {
     width: 24.375rem;
-    height: 32.125rem;
+    height: 30.125rem;
     display: flex;
     flex-direction: column;
     /* 내부 요소들을 세로로 배치 */
     align-items: center;
     /* 가로 중앙 정렬 */
     background-color: white;
-    justify-content: center;
-    margin-top: 1rem;
+    margin-top: 0.2rem;
 }
 
 .TodayHarmonyStory {
@@ -717,32 +716,72 @@
     flex-shrink: 0;
     color: #5C2380;
     text-align: center;
-    font-family: Pretendard;
+    font-family: Pretendard-Bold;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-right: 1rem;
+    margin-top: 3rem;
 }
 
 .StoryComponent {
     width: 15.3125rem;
     height: 13.6875rem;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    /* 내부 요소들을 세로로 배치 */
+    align-items: center;
+    /* 가로 중앙 정렬 */
+    justify-content: center;
+    padding: 5%;
+    background-repeat: no-repeat;
+    /* 배경 이미지 반복 안 함 */
+    background-size: cover;
+    /* 배경 이미지가 요소 크기에 맞게 조정 */
+    background-position: center;
+    /* 배경 이미지가 중앙에 위치하도록 설정 */
 }
 
 .HarmonyStoryTitle {
-    width: 9.4375rem;
+    width: 11.4375rem;
     height: 10.375rem;
     flex-shrink: 0;
     color: #5C2380;
-    font-family: Pretendard;
-    font-size: 1.125rem;
+    font-family: Pretendard-Bold;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration: unset;
+    cursor: pointer;
 
 }
 
+
 .HarmonyStoryTitle:hover {
     text-decoration: underline;
+}
+
+.PostModal {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: bottom 0.3s ease-in-out;
+}
+
+.PostModal.show {
+    bottom: 0;
+}
+
+.PostButton {
+    width: 24.375rem;
+    height: 3.965rem;
+    flex-shrink: 0;
+    border: transparent;
+    margin-top: 2.8rem;
 }
