@@ -5,6 +5,7 @@ import homeIcon from '../images/HomePage.png';
 import pointsIcon from '../images/PointPage.png';
 import mapIcon from '../images/MapPage.png';
 import menuIcon from '../images/MyPage.png';
+
 const Tabs = () => {
     const navigate = useNavigate();
     const location = useLocation();
@@ -24,15 +25,14 @@ const Tabs = () => {
             newActiveTab = 'map';
         } else if (path.includes('menu')) {
             newActiveTab = 'menu';
-        }else if (path.includes('home')) {
+        } else if (path.includes('home')) {
             newActiveTab = 'home';
         }
-        
 
         if (newActiveTab !== activeTab) {
             setActiveTab(newActiveTab);
         }
-    }, [location.pathname]);
+    }, [location.pathname, activeTab]); // 'activeTab'을 의존성 배열에 추가
 
     return (
         <div className="tab-container">
