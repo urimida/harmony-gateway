@@ -536,7 +536,8 @@
     /* 배경색 추가 */
     z-index: 1000;
     /* 다른 요소 위에 위치 */
-    position: relative; /* 추가 */
+    position: relative;
+    /* 추가 */
 }
 
 
@@ -702,7 +703,7 @@
 
 .HomeComponent2 {
     width: 24.375rem;
-    height: 28.125rem;
+    height: 26.125rem;
     display: flex;
     flex-direction: column;
     /* 내부 요소들을 세로로 배치 */
@@ -737,7 +738,7 @@
     align-items: center;
     /* 가로 중앙 정렬 */
     justify-content: center;
-    padding: 5%;
+    padding: 2%;
     background-repeat: no-repeat;
     /* 배경 이미지 반복 안 함 */
     background-size: cover;
@@ -747,20 +748,34 @@
 }
 
 .HarmonyStoryTitle {
-    width: 11.4375rem;
-    height: 10.375rem;
+    width: 11.6875rem;
+    height: 9.0625rem;
     flex-shrink: 0;
     color: #5C2380;
-    font-family: Pretendard-Bold;
+    font-family: Pretendard-Black;
     font-size: 1.5rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 900;
     line-height: normal;
     text-decoration: unset;
     cursor: pointer;
 
 }
 
+.PostDate {
+    width: 10.26738rem;
+    height: 1.54463rem;
+    flex-shrink: 0;
+    color: #5C2380;
+    font-family: Pretendard;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 0.5rem;
+    margin-right: 1.5rem;
+
+}
 
 .HarmonyStoryTitle:hover {
     text-decoration: underline;
@@ -772,8 +787,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     transition: bottom 0.3s ease-in-out;
+    flex-direction: column;
+    justify-content: flex-start; /* 위에서부터 정렬 */
 }
 
 .PostModal.show {
@@ -785,6 +802,37 @@
     width: 24.375rem;
     height: 3.965rem;
     border: transparent;
-    margin-top: 3rem ;
+    margin-top: 3rem;
+    cursor: pointer;
+    background-color: transparent;
+
 }
 
+.PostContent {
+    width: 24.375rem;
+    height: 60.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* 위에서부터 정렬 */
+    align-items: center; /* 수평 가운데 정렬 */
+    margin: auto; /* 화면 가운데에 오게 함 */
+}
+
+.PostContent > * + * {
+    margin-top: 3rem; /* 첫 번째 자식 요소를 제외한 나머지 자식 요소들에게 간격을 줌 */
+}
+
+.CloseButton {
+    width: 1.3rem;
+    height: 1.3rem;
+    flex-shrink: 0;
+    border: transparent;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-top: 4rem;
+
+
+    right: 10rem; /* 부모 요소 오른쪽에서 10px 왼쪽에 위치 */
+
+}

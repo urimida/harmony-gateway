@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import '../kind.css';
 import Tabs from "./Tabs";
 import MissionStatusImg from '../images/MissionStatus.png';
-import NewsBox from '../images/NewsBox.png';
 import ListofPosts from '../images/ListofPosts.png';
+import StoryComponent from "./StoryComponent";
+import XButton from  '../images/XButton.png';
 
 const Home = () => {
     const [showModal, setShowModal] = useState(false);
@@ -42,27 +43,31 @@ const Home = () => {
 
             <div className="HomeComponent2">
                 <div className="TodayHarmonyStory">Today’s Harmony Story</div>
-
-                <div className="StoryComponent" style={{ backgroundImage: `url(${NewsBox})` }}>
-                    <a href="https://n.news.naver.com/article/052/0002042417?sid=102" className="HarmonyStoryTitle">
-                        The children who helped the grandfather collecting waste paper.
-                    </a>
-                </div>
+                <StoryComponent
+                    articleTitle="The children who helped the grandfather collecting waste paper."
+                    articleUrl="https://n.news.naver.com/article/052/0002042417?sid=102"
+                    postDate="2024.05.30."
+                />
                 <button className="PostButton" onClick={toggleModal} style={{ backgroundImage: `url(${ListofPosts})` }}></button>
             </div>
 
             <div className={`PostModal ${showModal ? 'show' : ''}`}>
                 <div className="PostContent">
-                    <h2>Posts</h2>
-                    <button onClick={toggleModal}>Close</button>
-                    {/* Add your post content here */}
+                    <button className="CloseButton" onClick={toggleModal} style={{ backgroundImage: `url(${XButton})` }}></button>
+                    <StoryComponent
+                        articleTitle="The children who helped the grandfather collecting waste paper."
+                        articleUrl="https://n.news.naver.com/article/052/0002042417?sid=102"
+                        postDate="2024.05.30."
+                    />
+                    <StoryComponent
+                        articleTitle="The children who helped the grandfather collecting waste paper."
+                        articleUrl="https://n.news.naver.com/article/052/0002042417?sid=102"
+                        postDate="2024.05.30."
+                    />
+
                 </div>
             </div>
-
-
-                
-                <Tabs />
-
+            <Tabs />
         </div>
     );
 };
