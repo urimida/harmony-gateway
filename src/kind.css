@@ -536,7 +536,9 @@
     /* 배경색 추가 */
     z-index: 1000;
     /* 다른 요소 위에 위치 */
+    position: relative; /* 추가 */
 }
+
 
 .tabs {
     display: flex;
@@ -700,7 +702,7 @@
 
 .HomeComponent2 {
     width: 24.375rem;
-    height: 30.125rem;
+    height: 28.125rem;
     display: flex;
     flex-direction: column;
     /* 내부 요소들을 세로로 배치 */
@@ -778,10 +780,13 @@
     bottom: 0;
 }
 
+
 .PostButton {
     width: 24.375rem;
     height: 3.965rem;
-    flex-shrink: 0;
     border: transparent;
-    margin-top: 2.8rem;
+    margin-top: 3rem ;
+
+
 }
+

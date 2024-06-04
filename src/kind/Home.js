@@ -48,7 +48,7 @@ const Home = () => {
                         The children who helped the grandfather collecting waste paper.
                     </a>
                 </div>
-                <button className="PostButton" onClick={toggleModal}style={{ backgroundImage: `url(${ListofPosts})` }}></button>
+                <button className="PostButton" onClick={toggleModal} style={{ backgroundImage: `url(${ListofPosts})` }}></button>
             </div>
 
             <div className={`PostModal ${showModal ? 'show' : ''}`}>
@@ -59,7 +59,10 @@ const Home = () => {
                 </div>
             </div>
 
-            <Tabs />
+
+                
+                <Tabs />
+
         </div>
     );
 };
