@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import '../kind.css';
 import Tabs from "./Tabs";
 import MissionStatusImg from '../images/MissionStatus.png';
