@@ -23,7 +23,7 @@ const Tabs = () => {
             newActiveTab = 'points';
         } else if (path.includes('map')) {
             newActiveTab = 'map';
-        } else if (path.includes('menu')) {
+        } else if (path.includes('mypage')) {
             newActiveTab = 'menu';
         } else if (path.includes('home')) {
             newActiveTab = 'home';
@@ -56,8 +56,8 @@ const Tabs = () => {
                     <img src={mapIcon} alt="Map" />
                 </button>
                 <button
-                    className={`tab-button ${activeTab === 'menu' ? 'active' : ''}`}
-                    onClick={() => handleTabClick('menu', '/menu')}
+                    className={`tab-button ${activeTab === 'mypage' ? 'active' : ''}`}
+                    onClick={() => handleTabClick('mypage', '/mypage')}
                 >
                     <img src={menuIcon} alt="Menu" />
                 </button>

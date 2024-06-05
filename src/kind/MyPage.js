@@ -2,7 +2,7 @@ import React from "react";
 import '../kind.css';
 import Tabs from "./Tabs";
 
-const Home = () => {
+const MyPage = () => {
 
     return (
         <div className="Home">
@@ -30,4 +30,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default MyPage;

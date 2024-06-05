@@ -41,22 +41,11 @@
 }
 
 body {
-    background-color: #ffffff;
-    /* 배경색 설정 */
-    padding-top: env(safe-area-inset-top);
-    /* 상단 안전 영역 패딩 설정 */
-    padding-bottom: env(safe-area-inset-bottom);
-    /* 하단 안전 영역 패딩 설정 */
-    padding-left: env(safe-area-inset-left);
-    /* 왼쪽 안전 영역 패딩 설정 */
-    padding-right: env(safe-area-inset-right);
-    /* 오른쪽 안전 영역 패딩 설정 */
     margin: 0;
-    /* 기본 여백 제거 */
-    height: 100vh;
-    /* 전체 화면 높이 설정 */
+    padding: 0;
+    height: 100%;
+    width: 100%;
     box-sizing: border-box;
-    /* 박스 크기 설정 */
 }
 
 .first-selection {
@@ -772,10 +761,7 @@ body {
     display: flex;
     flex-direction: column;
     /* 내부 요소들을 세로로 배치 */
-    align-items: center;
-    /* 가로 중앙 정렬 */
     justify-content: center;
-    padding: 2%;
     background-repeat: no-repeat;
     /* 배경 이미지 반복 안 함 */
     background-size: cover;
@@ -790,12 +776,13 @@ body {
     flex-shrink: 0;
     color: #5C2380;
     font-family: Pretendard-Black;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
     text-decoration: unset;
     cursor: pointer;
+    margin-left: 1.5rem;
 
 }
 
@@ -809,14 +796,11 @@ body {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    margin-top: 0.5rem;
-    margin-right: 1.5rem;
+    margin-left: 1.5rem;
 
 }
 
-.HarmonyStoryTitle:hover {
-    text-decoration: underline;
-}
+
 
 .PostModal {
     position: fixed;

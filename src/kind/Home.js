@@ -51,6 +51,7 @@ const Home = () => {
 
             <div className="HomeComponent2">
                 <div className="TodayHarmonyStory">Today’s Harmony Story</div>
+
                 <StoryComponent
                     articleTitle="The children who helped the grandfather collecting waste paper."
                     articleUrl="https://n.news.naver.com/article/052/0002042417?sid=102"
@@ -63,9 +64,9 @@ const Home = () => {
                 <div className="PostContent">
                     <button className="CloseButton" onClick={toggleModal} style={{ backgroundImage: `url(${XButton})` }}></button>
                     <StoryComponent
-                        articleTitle="The children who helped the grandfather collecting waste paper."
-                        articleUrl="https://n.news.naver.com/article/052/0002042417?sid=102"
-                        postDate="2024.05.30."
+                        articleTitle="Brave citizen stops drunk wrong-way driver."
+                        articleUrl="https://n.news.naver.com/article/056/0011733888?sid=102"
+                        postDate="2024.06.04."
                     />
                     <StoryComponent
                         articleTitle="The children who helped the grandfather collecting waste paper."

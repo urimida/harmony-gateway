@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './kind/Home';
 import Points from './kind/Points';
 import Map from './kind/Map';
-import Menu from './kind/Menu';
+import MyPage from './kind/MyPage';
 import YoungSection from './kind/YoungSection';
 import ElderSection from './kind/ElderSection';
 import FirstPage from './kind/FirstPage';
@@ -30,7 +30,7 @@ function App() {
                 <Route path="/home" element={<Home />} />
                 <Route path="/points" element={<Points />} />
                 <Route path="/map" element={<Map />} />
-                <Route path="/menu" element={<Menu />} />
+                <Route path="/mypage" element={<MyPage />} />
             </Routes>
         </Router>
     );

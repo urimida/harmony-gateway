@@ -19,8 +19,8 @@ const TabContent = ({ activeTab }) => {
                     {/* Map content here */}
                 </div>
             )}
-            {activeTab === 'menu' && (
-                <div id="menu" className="tab-content active">
+            {activeTab === 'mypage' && (
+                <div id="mypage" className="tab-content active">
                     {/* Menu content here */}
                 </div>
             )}
