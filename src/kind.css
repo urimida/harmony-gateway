@@ -1,3 +1,64 @@
+@font-face {
+    font-family: "Pretendard-Bold";
+    src: url("../src/fonts/Pretendard-Bold.woff") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pretendard-ExtraLight";
+    src: url("../src/fonts/Pretendard-ExtraLight.woff") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pretendard";
+    src: url("../src/fonts/Pretendard-Regular.woff") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pretendard-Light";
+    src: url("../src/fonts/Pretendard-Light.woff") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pretendard-SemiBold";
+    src: url("../src/fonts/Pretendard-SemiBold.woff") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pretendard-Black";
+    src: url("../src/fonts/Pretendard-Black.woff") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #ffffff;
+    /* 배경색 설정 */
+    padding-top: env(safe-area-inset-top);
+    /* 상단 안전 영역 패딩 설정 */
+    padding-bottom: env(safe-area-inset-bottom);
+    /* 하단 안전 영역 패딩 설정 */
+    padding-left: env(safe-area-inset-left);
+    /* 왼쪽 안전 영역 패딩 설정 */
+    padding-right: env(safe-area-inset-right);
+    /* 오른쪽 안전 영역 패딩 설정 */
+    margin: 0;
+    /* 기본 여백 제거 */
+    height: 100vh;
+    /* 전체 화면 높이 설정 */
+    box-sizing: border-box;
+    /* 박스 크기 설정 */
+}
+
 .first-selection {
     width: 100vw;
     /* 화면 너비에 맞게 설정 */
@@ -215,33 +276,6 @@
     background-color: transparent;
 }
 
-@font-face {
-    font-family: "Pretendard-Bold";
-    src: url("../src/fonts/Pretendard-Bold.woff") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Pretendard";
-    src: url("../src/fonts/Pretendard-Regular.woff") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Pretendard-Light";
-    src: url("../src/fonts/Pretendard-Light.woff") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Pretendard-Black";
-    src: url("../src/fonts/Pretendard-Black.woff") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
 
 .ElderSection {
     height: 329.125rem;
@@ -629,14 +663,16 @@
     flex-direction: row;
     justify-content: space-between;
     /* 요소들 사이에 동일한 간격을 둠 */
-    /* justify-content: space-around; /* 양 끝에 반만큼의 간격을 둠 */
+    justify-content: space-around;
+    /* 양 끝에 반만큼의 간격을 둠 */
     align-items: center;
     /* 가로 중앙 정렬 */
+    padding: 5%;
 }
 
 
 .MyPoints {
-    width: 8rem;
+    width: 4.5rem;
     height: 3rem;
     display: flex;
     flex-direction: column;
@@ -645,7 +681,7 @@
     /* 세로 가운데 정렬 */
     align-items: center;
     /* 가로 가운데 정렬 */
-    margin-bottom: 20px;
+
 }
 
 
@@ -692,13 +728,13 @@
 .mission {
     color: #000;
     text-align: center;
-    font-family: Pretendard;
-    font-size: 0.9375rem;
+    font-family: Pretendard-Bold;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
     /* 0.9375rem */
-    margin-top: 1.4rem;
+
 }
 
 .HomeComponent2 {
@@ -725,7 +761,8 @@
     font-weight: 700;
     line-height: normal;
     margin-right: 1rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 .StoryComponent {
@@ -790,7 +827,8 @@
     background-color: rgb(255, 255, 255);
     transition: bottom 0.3s ease-in-out;
     flex-direction: column;
-    justify-content: flex-start; /* 위에서부터 정렬 */
+    justify-content: flex-start;
+    /* 위에서부터 정렬 */
 }
 
 .PostModal.show {
@@ -813,13 +851,17 @@
     height: 60.75rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* 위에서부터 정렬 */
-    align-items: center; /* 수평 가운데 정렬 */
-    margin: auto; /* 화면 가운데에 오게 함 */
+    justify-content: flex-start;
+    /* 위에서부터 정렬 */
+    align-items: center;
+    /* 수평 가운데 정렬 */
+    margin: auto;
+    /* 화면 가운데에 오게 함 */
 }
 
-.PostContent > * + * {
-    margin-top: 3rem; /* 첫 번째 자식 요소를 제외한 나머지 자식 요소들에게 간격을 줌 */
+.PostContent>*+* {
+    margin-top: 3rem;
+    /* 첫 번째 자식 요소를 제외한 나머지 자식 요소들에게 간격을 줌 */
 }
 
 .CloseButton {
@@ -833,6 +875,194 @@
     margin-top: 4rem;
 
 
-    right: 10rem; /* 부모 요소 오른쪽에서 10px 왼쪽에 위치 */
+    right: 10rem;
+    /* 부모 요소 오른쪽에서 10px 왼쪽에 위치 */
 
+}
+
+
+/* kind.css */
+.Points {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F7F7F7;
+    align-items: center;
+
+}
+
+.PointComponent1 {
+    width: 24.375rem;
+    height: 10rem;
+    flex-shrink: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    /* 세로로 배치 */
+    justify-content: center;
+    /* 수직 중앙 정렬 */
+    align-items: center;
+    /* 수평 중앙 정렬 */
+}
+
+.PointComponent2 {
+    width: 24.375rem;
+    height: 23rem;
+    flex-shrink: 0;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    /* 세로로 배치 */
+    justify-content: center;
+    /* 수직 중앙 정렬 */
+    align-items: center;
+    /* 수평 중앙 정렬 */
+
+}
+
+.MyPoints-2 {
+    width: 9rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    /* 요소들을 세로로 배치 */
+    justify-content: center;
+    /* 세로 가운데 정렬 */
+    align-items: center;
+    /* 가로 가운데 정렬 */
+    margin-bottom: 20px;
+}
+
+
+.MyPoints1-2 {
+    display: flex;
+    width: 8.6875rem;
+    height: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #5C2380;
+    text-align: center;
+    font-family: Pretendard-Bold;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 1.3125rem */
+}
+
+.MyPoints2-2 {
+    display: flex;
+    width: 8.67394rem;
+    height: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Pretendard-Bold;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-top: 0.5rem;
+    /* 1.875rem */
+}
+
+.Width100Button {
+    width: 24.375rem;
+    height: 4.25rem;
+    flex-shrink: 0;
+    background: #FFF;
+    color: #000;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    margin-top: 0.2rem;
+}
+
+.Width100Button:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.Width100Button:active {
+    transform: translateY(2px);
+}
+
+.PointComponent2 {
+    width: 24.375rem;
+    height: 27rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.Ongoing {
+    display: flex;
+    flex-direction: row;
+    width: 4rem;
+    height: 4rem;
+    flex-shrink: 0;
+    margin-top: 2.2rem;
+}
+
+.OngoingContenets1 {
+    display: flex;
+    width: 1.3125rem;
+    height: 1.625rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Pretendard-Bold;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 100%;
+    /* 2rem */
+}
+
+.OngoingContenets2 {
+    display: flex;
+    width: 1.3125rem;
+    height: 1.625rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #b4b4b4;
+    text-align: center;
+    font-family: Pretendard-ExtraLight;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 100%;
+    margin-top: 0.5rem;
+    /* 2rem */
+}
+
+.OngoingContenets3 {
+    display: flex;
+    width: 1.3125rem;
+    height: 1.625rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #b4b4b4;
+    text-align: center;
+    font-family: Pretendard-Bold;
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 100%;
+    margin-top: 1.2rem;
+    /* 2rem */
 }

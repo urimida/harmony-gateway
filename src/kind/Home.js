@@ -1,10 +1,12 @@
+
 import React, { useState } from "react";
 import '../kind.css';
 import Tabs from "./Tabs";
 import MissionStatusImg from '../images/MissionStatus.png';
 import ListofPosts from '../images/ListofPosts.png';
 import StoryComponent from "./StoryComponent";
-import XButton from  '../images/XButton.png';
+import XButton from '../images/XButton.png';
+
 
 const Home = () => {
     const [showModal, setShowModal] = useState(false);
@@ -27,13 +29,19 @@ const Home = () => {
                     </div>
                     <div className="MissionStatus" style={{ backgroundImage: `url(${MissionStatusImg})` }}>
                     </div>
-                    <div className="MyPoints">
-                        <div className="MyPoints1">
-                            My Point
+                    <div className="Ongoing">
+                        <div className="OngoingContenets1">
+                            2
                         </div>
-                        <div className="MyPoints2">
-                            2500
+
+                        <div className="OngoingContenets2">
+                            /
                         </div>
+
+                        <div className="OngoingContenets3">
+                            3
+                        </div>
+
                     </div>
                 </div>
                 <div className="mission">

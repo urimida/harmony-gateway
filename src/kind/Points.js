@@ -1,33 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import '../kind.css';
 import Tabs from "./Tabs";
+import MissionStatusImg from '../images/MissionStatus.png';
 
-const Home = () => {
+const Points = () => {
 
     return (
-        <div className="Home">
-            <div className="HomeComponent1">
-                <div className="MissionStatus">
-                    <div className="title1">
-                        Seeker of seasoned wisdom
+        <div className="Points">
+            <div className="PointComponent1">
+                <div className="MyPoints-2">
+                    <div className="MyPoints1-2">
+                        My Point
+                    </div>
+                    <div className="MyPoints2-2">
+                        2500
                     </div>
                 </div>
+
             </div>
-            <div className="HomeComponent1">
-                <div className="MissionStatus">
-                    <div className="TodayHarmonyStory">
-                        Today’s Harmony Story
+
+            <button className="Width100Button">
+                Donate My Points
+            </button>
+            <button className="Width100Button">
+                Donation List
+            </button>
+
+            <div className="PointComponent2">
+                <div className="TodayHarmonyStory">Today’s Mission</div>
+                <div className="MissionStatus" style={{ backgroundImage: `url(${MissionStatusImg})` }}>
+                </div>
+
+                <div className="Ongoing">
+                    <div className="OngoingContenets1">
+                        2
                     </div>
-                    <div className="title1">
-                        <a href="https://n.news.naver.com/article/052/0002042417?sid=102" className="HarmonyStoryTitle">
-                            The children who helped the grandfather collecting waste paper.
-                        </a>
+
+                    <div className="OngoingContenets2">
+                        /
                     </div>
+
+                    <div className="OngoingContenets3">
+                        3
+                    </div>
+
+                </div>
+
+                <div className="mission">
+                    Share wisdom 3 times: 1,000 points.
                 </div>
             </div>
-            <Tabs></Tabs>
+
+
+            <Tabs />
         </div>
     );
 };
 
-export default Home;
+export default Points;
