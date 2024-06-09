@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import '../kind.css';
-import logo from '../images/Logo.png';
+import Logo from '../images/Logo.png';
 
 const LoginPage = () => {
     const navigate = useNavigate();
@@ -13,7 +13,7 @@ const LoginPage = () => {
 
     return (
         <div className="LoginPage">
-            <img src={logo} alt="Logo" className="logo" />
+            <img src={Logo} alt="Logo" className="logo" />
             <div className="form">
                 <div className="inputGroup">
                     <label htmlFor="id">ID</label>
