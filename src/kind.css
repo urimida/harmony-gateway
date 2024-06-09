@@ -1499,12 +1499,9 @@ body {
     border-color: transparent;
 
 }
-
 .loginButton:hover {
     background-color: #00000021;
 }
-
-
 .SignUpPage {
     display: flex;
     flex-direction: column;
@@ -1523,9 +1520,6 @@ body {
     margin-top: 2rem;
     /* 1.25rem */
 }
-
-
-
 .signUpButton {
     width: 9rem;
     height: 3.75rem;
