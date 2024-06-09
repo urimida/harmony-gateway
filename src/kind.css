@@ -1056,7 +1056,7 @@ body {
 
 
 .MyPage {
-    height: 52.75rem;
+    height: 50rem;
     display: flex;
     flex-direction: column;
     background-color: rgba(177, 73, 240, 0.05);
@@ -1071,7 +1071,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: left;
-    margin-bottom: 0.1rem;
 }
 
 
