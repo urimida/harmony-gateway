@@ -33,7 +33,7 @@ const Donation = () => {
                     type="How much?"
                     id="How much?"
                     name="How much?"
-                    placeholder="Please enter the amount you wish to donate."
+                    placeholder="Please enter the amount you wish."
                     required
                 />
             </div>
