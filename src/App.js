@@ -7,12 +7,18 @@ import MyPage from './kind/MyPage';
 import YoungSection from './kind/YoungSection';
 import ElderSection from './kind/ElderSection';
 import FirstPage from './kind/FirstPage';
-import Success from './kind/Success';
 import Explaination1 from './kind/Explaination1';
 import Explaination2 from './kind/Explaination2';
 import Explaination3 from './kind/Explaination3';
 import Explaination4 from './kind/Explaination4';
 import FirstSelection from './kind/FisrtSelection';
+import MyPin from './kind/MyPin';
+import LoginPage from './kind/Login';
+import SignUpPage from './kind/SignUpPage';
+import MapDetails from './kind/MapDetails';
+import PostDetail from './kind/PostDetail';
+import AddPosts from './kind/AddPosts';
+import Donation from './kind/Donation';
 
 function App() {
     return (
@@ -22,7 +28,6 @@ function App() {
                 <Route path="/who" element={<FirstSelection/>} />
                 <Route path="/young-section" element={<YoungSection />} />
                 <Route path="/elder-section" element={<ElderSection />} />
-                <Route path="/success" element={<Success />} />
                 <Route path="/explaination1" element={<Explaination1 />} />
                 <Route path="/explaination2" element={<Explaination2 />} />
                 <Route path="/explaination3" element={<Explaination3 />} />
@@ -31,6 +36,13 @@ function App() {
                 <Route path="/points" element={<Points />} />
                 <Route path="/map" element={<Map />} />
                 <Route path="/mypage" element={<MyPage />} />
+                <Route path="/mypin" element={<MyPin />} />
+                <Route path="/login" element={<LoginPage />} />
+                <Route path="/sign-up" element={<SignUpPage />} />
+                <Route path="/map-detail" element={<MapDetails />} />
+                <Route path="/post-detail" element={<PostDetail />} />
+                <Route path="/add-post" element={<AddPosts />} />
+                <Route path="/donation" element={<Donation />} />
             </Routes>
         </Router>
     );

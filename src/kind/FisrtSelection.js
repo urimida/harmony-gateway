@@ -13,7 +13,7 @@ const FirstSelection = () => {
             <div className="container">
                 <div className="quote-box" style={{ backgroundImage: `url(${Yellowbox})` }} onClick={() => navigate('/elder-section')}>
                     <div className="title1">
-                    Seeker of seasoned wisdom
+                    Digital technology proficiency aspirant
                     </div>
                 </div>
                 <div className="separator">
@@ -21,7 +21,7 @@ const FirstSelection = () => {
                 </div>
                 <div className="quote-box" style={{ backgroundImage: `url(${WhiteBox})` }}  onClick={() => navigate('/young-section')}>
                     <div className="title2">
-                    Digital technology proficiency aspirant
+                    Seeker of seasoned wisdom
                     </div>
                 </div>
             </div>

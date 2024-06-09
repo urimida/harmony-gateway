@@ -24,7 +24,7 @@ const Tabs = () => {
         } else if (path.includes('map')) {
             newActiveTab = 'map';
         } else if (path.includes('mypage')) {
-            newActiveTab = 'menu';
+            newActiveTab = 'mypage';
         } else if (path.includes('home')) {
             newActiveTab = 'home';
         }

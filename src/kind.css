@@ -541,6 +541,13 @@ body {
     line-height: normal;
     border: transparent;
     cursor: pointer;
+    transition: background 0.3s ease;
+    /* 배경색 전환을 부드럽게 */
+}
+
+.Next:active {
+    background: #DDD;
+    /* 클릭 시 어두운 색으로 변경 */
 }
 
 .tab-container {
@@ -734,7 +741,7 @@ body {
     /* 내부 요소들을 세로로 배치 */
     align-items: center;
     /* 가로 중앙 정렬 */
-    background-color: white;
+    background-color: rgba(177, 73, 240, 0.05);
     margin-top: 0.2rem;
 }
 
@@ -824,7 +831,7 @@ body {
     width: 24.375rem;
     height: 3.965rem;
     border: transparent;
-    margin-top: 3rem;
+    margin-top: 4rem;
     cursor: pointer;
     background-color: transparent;
 
@@ -857,8 +864,6 @@ body {
     background-repeat: no-repeat;
     cursor: pointer;
     margin-top: 4rem;
-
-
     right: 10rem;
     /* 부모 요소 오른쪽에서 10px 왼쪽에 위치 */
 
@@ -960,7 +965,7 @@ body {
     background: #FFF;
     color: #000;
     text-align: center;
-    font-family: Pretendard;
+    font-family: Pretendard-SemiBold;
     font-size: 1rem;
     font-style: normal;
     font-weight: 300;
@@ -971,15 +976,13 @@ body {
     align-items: center;
     border: transparent;
     margin-top: 0.2rem;
-}
-
-.Width100Button:hover {
-    background-color: #f0f0f0;
-    cursor: pointer;
+    transition: background 0.3s ease;
+    /* 배경색 전환을 부드럽게 */
 }
 
 .Width100Button:active {
-    transform: translateY(2px);
+    background: #DDD;
+    /* 클릭 시 어두운 색으로 변경 */
 }
 
 .PointComponent2 {
@@ -1049,4 +1052,771 @@ body {
     line-height: 100%;
     margin-top: 1.2rem;
     /* 2rem */
+}
+
+
+.MyPage {
+    height: 52.75rem;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #F7F7F7;
+    align-items: center;
+}
+
+.MyPageComponent1 {
+    width: 24.375rem;
+    height: 15.25rem;
+    flex-shrink: 0;
+    background: #FFF;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    margin-bottom: 0.5rem;
+}
+
+
+.MyPageandSetting {
+    width: 22.5rem;
+    height: 2.2rem;
+    display: flex;
+    /* Flexbox 레이아웃 활성화 */
+    justify-content: space-between;
+    /* 내부 컴포넌트를 양 끝에 배치 */
+    margin-top: 4.3rem;
+}
+
+/* My (MY Page) */
+.My {
+    color: #000;
+    font-family: Pretendard-bold;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 1.6875rem */
+    margin-left: 2rem;
+}
+
+/* Setting Button */
+.Setting {
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+    fill: #0A0708;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.SettingImage {
+    width: 1.5625rem;
+    height: 1.625rem;
+    flex-shrink: 0;
+}
+
+.DefaultProfile {
+    width: 5rem;
+    height: 5rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: transparent;
+    background-color: transparent;
+}
+
+/* Default Profile Image */
+
+
+/* Nickname */
+.NickName {
+    width: 7.5rem;
+    color: #5C2380;
+    font-family: Pretendard-Bold;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    /* 1.6875rem */
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-left: 1.5rem;
+}
+
+/* MyPageComponent2 Container */
+.MyPageComponent2 {
+    margin-bottom: 12rem;
+}
+
+.Width100Button2 {
+    width: 24.375rem;
+    height: 4.25rem;
+    flex-shrink: 0;
+    background: #FFF;
+    color: #000;
+    text-align: left;
+    font-family: Pretendard-SemiBold;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    border: transparent;
+    margin-top: 0.2rem;
+    padding-left: 10%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    /* 배경색 전환을 부드럽게 */
+}
+
+.Width100Button2:active {
+    background: #DDD;
+    /* 클릭 시 어두운 색으로 변경 */
+}
+
+
+
+.Profile {
+    width: 15rem;
+    height: 5rem;
+    margin-top: 1.5rem;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin-left: 1.5rem;
+}
+
+
+.Map {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F7F7F7;
+    align-items: center;
+}
+
+.MapComponent1 {
+    width: 24.375rem;
+    height: 3.9375rem;
+    display: flex;
+    flex-shrink: 0;
+    background-color: #FFF;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.Region {
+    width: 10rem;
+    height: 1.62rem;
+    border: transparent;
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    margin-left: 1.44rem;
+    cursor: pointer;
+}
+
+.PinOff {
+    width: 1.3rem;
+    height: 1.4rem;
+    flex-shrink: 0;
+    border: transparent;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    margin-left: 7.5rem;
+    cursor: pointer;
+}
+
+.MapReturnButton {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.MapComponent2 {
+    display: flex;
+    width: 24.375rem;
+    height: 40.625rem;
+    flex-shrink: 0;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.Hongikcom {
+    display: flex;
+    width: 11rem;
+    height: 5.2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8.5rem;
+    margin-left: 12.1rem;
+}
+
+
+.PinOn {
+    width: 1.3rem;
+    height: 1.4rem;
+    flex-shrink: 0;
+    border: transparent;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+
+.Hongik {
+    display: flex;
+    width: 11rem;
+    height: 3.9rem;
+    background-repeat: no-repeat;
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+
+
+}
+
+.StarBucks {
+    display: flex;
+    width: 11rem;
+    height: 3.9rem;
+    background-repeat: no-repeat;
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 1.7rem;
+    margin-left: 3.4rem;
+}
+
+.SangSu {
+    display: flex;
+    width: 11rem;
+    height: 3.9rem;
+    background-repeat: no-repeat;
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 10.28rem;
+    margin-left: 1.5rem;
+}
+
+.ListofLocations {
+    width: 24.375rem;
+    height: 3.965rem;
+    flex-shrink: 0;
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 3.6rem;
+}
+
+
+.Back {
+    border: transparent;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.MapContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.MapContent1 {
+    width: 24.375rem;
+    height: 3.9375rem;
+    display: flex;
+    flex-shrink: 0;
+    background-color: #FFF;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Back {
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-shrink: 0;
+    margin-left: 1.12rem;
+}
+
+.MapText {
+    color: #000;
+    font-family: Pretendard-SemiBold;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 1.5rem */
+    margin-left: 1.5rem;
+    background-color: transparent;
+}
+
+.MapContent2 {
+    flex-direction: column;
+    width: 24.375rem;
+    height: 40.8125rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HongikCom {
+    margin-top: 0.44rem;
+    width: 23rem;
+    height: 12.625rem;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    border: transparent;
+}
+
+.StarBucksCom {
+    width: 23rem;
+    height: 12.625rem;
+    flex-shrink: 0;
+    ;
+    margin-top: 0.94rem;
+    align-items: center;
+    justify-content: center;
+    border: transparent;
+}
+
+.SangSuCom {
+    width: 23rem;
+    height: 12.625rem;
+    flex-shrink: 0;
+    margin-top: 0.94rem;
+    margin-bottom: 0.44rem;
+    align-items: center;
+    justify-content: center;
+    border: transparent;
+}
+
+.PinOn2 {
+    width: 1.3rem;
+    height: 1.4rem;
+    flex-shrink: 0;
+    border: transparent;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin-left: 16rem;
+}
+
+.LoginPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.logo {
+    width: 17.6875rem;
+    height: 17.66456rem;
+    flex-shrink: 0;
+    margin-top: 8rem;
+    margin-bottom: 4.84rem;
+}
+
+
+.inputGroup {
+    width: 21.4375rem;
+    height: 4.625rem;
+    flex-shrink: 0;
+    margin-bottom: 1.5rem;
+}
+
+.inputGroup label {
+    color: #000;
+    font-family: Pretendard-SemiBold;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 1.25rem */
+}
+
+.inputGroup input {
+    width: 19rem;
+    height: 1rem;
+    flex-shrink: 0;
+    padding: 1rem;
+    background: var(--Gray-scale-Gray-3, #EFEFEF);
+    color: var(--7-d-7-d-7-d, #7D7D7D);
+    font-family: Pretendard;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+    margin-top: 0.3rem;
+    border-color: transparent;
+    /* 1rem */
+
+}
+
+.LinksAndLogin {
+    width: 21.4375rem;
+    height: 5rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    justify-content: space-between; /* 요소들을 컨테이너의 양 끝으로 정렬 */
+}
+
+
+
+
+.click:hover {
+    text-decoration: underline;
+}
+
+.loginButton {
+    width: 9rem;
+    height: 3.75rem;
+    flex-shrink: 0;
+    fill: #EFEFEF;
+    color: #5C2380;
+    text-align: center;
+    font-family: Pretendard-Bold;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 5rem;
+    border-color: transparent;
+
+}
+
+.loginButton:hover {
+    background-color: #5a54e0;
+}
+
+
+.SignUpPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.title {
+    color: #000;
+    font-family: Pretendard-Bold;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    margin-top: 2rem;
+    /* 1.25rem */
+}
+
+
+
+.signUpButton {
+    width: 9rem;
+    height: 3.75rem;
+    flex-shrink: 0;
+    color: #5C2380;
+    border-radius: 5rem;
+    border-color: transparent;
+    text-align: center;
+    font-family: Pretendard-Bold;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.Information {
+    height: 2.5rem;
+    width: 21.4375rem;
+    background-repeat: no-repeat;
+    margin-top: 1.45rem;
+}
+
+.MakeYourAccount {
+    height: 2.5rem;
+    width: 21.4375rem;
+    background-repeat: no-repeat;
+    margin-top: 1.45rem;
+}
+
+.MapDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+
+.MapContent22 {
+    width: 24.375rem;
+    height: 12.125rem;
+    flex-shrink: 0;
+}
+
+.HongikImage {
+    width: 24.375rem;
+    height: 12.125rem;
+    flex-shrink: 0;
+}
+
+.MapContent33 {
+    width: 24.375rem;
+    height: 6.0625rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+}
+
+.MapInformationBox {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    height: 4rem;
+    justify-content: space-between;
+    margin-left: 2rem;
+}
+
+.MapInformation1 {
+    color: #000;
+    font-family: Pretendard-Bold;
+    font-size: 1rem;
+    line-height: 100%;
+}
+
+.MapInformation2 {
+    color: var(--7-d-7-d-7-d, #7D7D7D);
+    font-family: Pretendard;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+}
+
+.PinToggle {
+    width: 1.7rem;
+    height: 2rem;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    border: transparent;
+    background-color: transparent;
+    background-size: 100%;
+}
+
+.Add {
+    width: 2.25rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    margin-left: 1.25rem;
+}
+
+.Posts {
+    width: 24.375rem;
+    height: 3.375rem;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+}
+
+.Jelly,
+.Rimi {
+    width: 23rem;
+    height: 16rem;
+    flex-shrink: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.PostDetailContent1 {
+    width: 24.375rem;
+    height: 59.9375rem;
+    flex-shrink: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.PostDetailIMG {
+    width: 22.75rem;
+    height: 39.5rem;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    margin-top: 1.88rem;
+}
+
+.AddPosts {
+    width: 24.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    margin: 0 auto;
+    /* 중앙 정렬을 위한 추가 */
+}
+
+.AddPhotos {
+    width: 21.4375rem;
+    height: 4.8125rem;
+    flex-shrink: 0;
+    margin-bottom: 2rem;
+
+}
+
+.What {
+    color: #000;
+    font-family: Pretendard-SemiBold;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 1.875rem */
+}
+
+.Type {
+    display: flex;
+    flex-direction: column;
+    width: 21.4375rem;
+    flex-shrink: 0;
+    margin-top: 0.75rem;
+}
+
+.Type-1 {
+    width: 21.4375rem;
+    height: 1.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0.3rem;
+    margin-left: 0.4rem;
+}
+
+.Check {
+    width: 1.2rem;
+    height: 1.2rem;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    margin-right: 1rem;
+}
+
+.Post {
+    width: 9rem;
+    height: 3.75rem;
+    flex-shrink: 0;
+    fill: #EFEFEF;
+    color: #5C2380;
+    text-align: center;
+    font-family: Pretendard-Bold;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 5rem;
+    border-color: transparent;
+    margin-left: 12rem;
+}
+
+.inputGroupBox {
+    width: 21.4375rem;
+    height: 5rem;
+    flex-shrink: 0;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.inputGroupTall {
+    height: 8rem;
+    /* 원하는 높이로 조정합니다. */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inputGroupTall input {
+    flex-grow: 1;
+    /* 인풋을 컨테이너의 남은 공간에 채웁니다. */
+}
+
+.WhiteBox {
+    height: 10rem;
+}
+
+
+.Donation {
+    width: 24.375rem;
+    height: 52.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+
+
+
+
+.MyPointsSum {
+    display: flex;
+    width: 11.0625rem;
+    height: 10rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Pretendard-Bold;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    /* 3.75rem */
+}
+
+.ThankstoDonates {
+    width: 17.625rem;
+    height: 4.875rem;
+    flex-shrink: 0;
+    color: #000;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 110%;
+margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.Logo{
+    width: 10.875rem;
+    height: 10.86088rem;
+    flex-shrink: 0;
+    background-size: 100%;
+    margin-top: 3rem;
+
 }

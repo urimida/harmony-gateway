@@ -1,9 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import '../kind.css';
 import Tabs from "./Tabs";
 import MissionStatusImg from '../images/MissionStatus.png';
 
 const Points = () => {
+    const navigate = useNavigate(); // Initialize the navigate function
+
+    const handleDonatePointsClick = () => {
+        navigate('/donation'); // Navigate to the donation page
+    };
 
     return (
         <div className="Points">
@@ -19,7 +25,7 @@ const Points = () => {
 
             </div>
 
-            <button className="Width100Button">
+            <button className="Width100Button" onClick={handleDonatePointsClick}>
                 Donate My Points
             </button>
             <button className="Width100Button">
@@ -50,7 +56,6 @@ const Points = () => {
                     Share wisdom 3 times: 1,000 points.
                 </div>
             </div>
-
 
             <Tabs />
         </div>

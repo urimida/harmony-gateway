@@ -22,7 +22,7 @@ const YoungSection = () => {
         } else {
             // 두 번째 클릭일 때
             // 원하는 경로로 이동
-            navigate('/explaination1');
+            navigate('/login');
         }
     };
 
