@@ -7,13 +7,13 @@ const LoginPage = () => {
     const navigate = useNavigate();
 
     const handleLogin = () => {
-        console.log("Hello. Welcome to Harmony-Gateway.");
+        alert("Hello. Welcome to Harmony-Gateway.");
         navigate("/home");
     };
 
     return (
         <div className="LoginPage">
-            <img src={Logo} alt="Logo" className="logo" />
+            <img src={Logo} alt="Logo" className="Logo" />
             <div className="form">
                 <div className="inputGroup">
                     <label htmlFor="id">ID</label>

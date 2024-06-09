@@ -1430,14 +1430,6 @@ body {
     background-color: #ffffff;
 }
 
-.logo {
-    width: 17.6875rem;
-    height: 17.66456rem;
-    flex-shrink: 0;
-    margin-top: 8rem;
-    margin-bottom: 4.84rem;
-}
-
 
 .inputGroup {
     width: 21.4375rem;
@@ -1509,7 +1501,7 @@ body {
 }
 
 .loginButton:hover {
-    background-color: #5a54e0;
+    background-color: #00000021;
 }
 
 
@@ -1776,10 +1768,6 @@ body {
     align-items: center;
     margin: auto;
 }
-
-
-
-
 
 .MyPointsSum {
     display: flex;
