@@ -9,6 +9,7 @@ const SignUpPage = () => {
 
     const handleSignUp = () => {
         console.log("회원가입 버튼 클릭됨");
+        alert("You have become a member of Harmony-Gateway.");
         navigate("/login");
     };
 

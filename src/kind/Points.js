@@ -11,6 +11,11 @@ const Points = () => {
         navigate('/donation'); // Navigate to the donation page
     };
 
+    const handleDonationListClick = () => {
+        // Show alert when "Donation List" button is clicked
+        alert("You haven't made any donations yet!");
+    };
+
     return (
         <div className="Points">
             <div className="PointComponent1">
@@ -22,13 +27,12 @@ const Points = () => {
                         2500
                     </div>
                 </div>
-
             </div>
 
             <button className="Width100Button" onClick={handleDonatePointsClick}>
                 Donate My Points
             </button>
-            <button className="Width100Button">
+            <button className="Width100Button" onClick={handleDonationListClick}>
                 Donation List
             </button>
 
@@ -36,22 +40,17 @@ const Points = () => {
                 <div className="TodayHarmonyStory">Today’s Mission</div>
                 <div className="MissionStatus" style={{ backgroundImage: `url(${MissionStatusImg})` }}>
                 </div>
-
                 <div className="Ongoing">
                     <div className="OngoingContenets1">
                         2
                     </div>
-
                     <div className="OngoingContenets2">
                         /
                     </div>
-
                     <div className="OngoingContenets3">
                         3
                     </div>
-
                 </div>
-
                 <div className="mission">
                     Share wisdom 3 times: 1,000 points.
                 </div>

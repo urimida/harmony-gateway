@@ -13,7 +13,7 @@ const LoginPage = () => {
 
     return (
         <div className="LoginPage">
-            <img src={Logo} alt="Logo" className="Logo" />
+            <img src={Logo} alt="Logo" className="Logo-Big" />
             <div className="form">
                 <div className="inputGroup">
                     <label htmlFor="id">ID</label>
