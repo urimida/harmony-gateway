@@ -635,7 +635,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #F7F7F7;
+    background-color: rgba(177, 73, 240, 0.05);
     align-items: center;
 }
 
@@ -875,7 +875,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #F7F7F7;
+    background-color: rgba(177, 73, 240, 0.05);
     align-items: center;
 
 }
@@ -884,7 +884,7 @@ body {
     width: 24.375rem;
     height: 10rem;
     flex-shrink: 0;
-    background-color: #ffffff;
+    background-color: white;
     display: flex;
     flex-direction: column;
     /* 세로로 배치 */
@@ -898,7 +898,7 @@ body {
     width: 24.375rem;
     height: 23rem;
     flex-shrink: 0;
-    background-color: #FFF;
+    background-color: rgba(177, 73, 240, 0.05);
     display: flex;
     flex-direction: column;
     /* 세로로 배치 */
@@ -1059,20 +1059,19 @@ body {
     height: 52.75rem;
     display: flex;
     flex-direction: column;
-
-    background-color: #F7F7F7;
+    background-color: rgba(177, 73, 240, 0.05);
     align-items: center;
 }
 
 .MyPageComponent1 {
     width: 24.375rem;
-    height: 15.25rem;
+    height: 13rem;
     flex-shrink: 0;
     background: #FFF;
     flex-direction: row;
     justify-content: center;
     align-items: left;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
 }
 
 
@@ -1083,7 +1082,7 @@ body {
     /* Flexbox 레이아웃 활성화 */
     justify-content: space-between;
     /* 내부 컴포넌트를 양 끝에 배치 */
-    margin-top: 4.3rem;
+    margin-top: 2rem;
 }
 
 /* My (MY Page) */
@@ -1172,7 +1171,7 @@ body {
     justify-content: center;
     align-items: left;
     border: transparent;
-    margin-top: 0.2rem;
+    margin-top: 0.1rem;
     padding-left: 10%;
     cursor: pointer;
     transition: background 0.3s ease;
@@ -1202,7 +1201,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #F7F7F7;
+    background-color: rgba(177, 73, 240, 0.05);
     align-items: center;
 }
 
@@ -1565,7 +1564,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f7f7f7;
+    background-color: rgba(177, 73, 240, 0.05);
 }
 
 .MapContent22 {
@@ -1660,11 +1659,17 @@ body {
 }
 
 .PostDetailIMG {
-    width: 22.75rem;
-    height: 39.5rem;
+    width: 24rem;
+    height: 45rem;
     flex-shrink: 0;
     background-repeat: no-repeat;
     margin-top: 1.88rem;
+    size: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.7rem;
 }
 
 .AddPosts {
@@ -1682,7 +1687,7 @@ body {
     height: 4.8125rem;
     flex-shrink: 0;
     margin-bottom: 2rem;
-
+margin-top: 2rem;
 }
 
 .What {
@@ -1760,7 +1765,7 @@ body {
 }
 
 .WhiteBox {
-    height: 10rem;
+    height: 7rem;
 }
 
 
@@ -1775,8 +1780,8 @@ body {
 
 .MyPointsSum {
     display: flex;
-    width: 11.0625rem;
-    height: 10rem;
+    width: 24.375rem;
+    height: 8rem;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
@@ -1790,6 +1795,8 @@ body {
     font-weight: 500;
     line-height: 150%;
     /* 3.75rem */
+    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .ThankstoDonates {

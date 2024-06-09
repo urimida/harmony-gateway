@@ -15,7 +15,7 @@ const AddPosts = () => {
     });
 
     const handleBackClick = () => {
-        navigate('/post-detail');
+        navigate('/map-detail');
     };
 
     const handleCheckToggle = (type) => {
