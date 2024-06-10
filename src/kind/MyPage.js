@@ -41,7 +41,7 @@ const MyPage = () => {
                         <img src={DefaultProfile} className="DefaultProfileImage" alt="DefaultProfileImage" />
                     </button>
                     <div className="NickName">
-                        USER
+                        Jelly
                     </div>
                 </div>
             </div>

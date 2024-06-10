@@ -719,6 +719,8 @@ body {
     width: 9.1875rem;
     height: 9.1875rem;
     flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-size: 90%;
 }
 
 .mission {
@@ -834,7 +836,8 @@ body {
     margin-top: 4rem;
     cursor: pointer;
     background-color: transparent;
-
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .PostContent {
@@ -882,7 +885,7 @@ body {
 
 .PointComponent1 {
     width: 24.375rem;
-    height: 10rem;
+    height: 13rem;
     flex-shrink: 0;
     background-color: white;
     display: flex;
@@ -919,7 +922,6 @@ body {
     /* 세로 가운데 정렬 */
     align-items: center;
     /* 가로 가운데 정렬 */
-    margin-bottom: 20px;
 }
 
 
@@ -942,7 +944,7 @@ body {
 
 .MyPoints2-2 {
     display: flex;
-    width: 8.67394rem;
+    width: 15rem;
     height: 3rem;
     flex-direction: column;
     justify-content: center;
@@ -1115,6 +1117,8 @@ body {
     width: 1.5625rem;
     height: 1.625rem;
     flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-size: 90%;
 }
 
 .DefaultProfile {
@@ -1127,10 +1131,15 @@ body {
     align-items: center;
     border: transparent;
     background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 90%;
 }
 
 /* Default Profile Image */
-
+.DefaultProfileImage{
+    width: 5rem;
+    height: 5rem;
+}
 
 /* Nickname */
 .NickName {
@@ -1223,6 +1232,8 @@ body {
     background-repeat: no-repeat;
     margin-left: 1.44rem;
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 90%;
 }
 
 .PinOff {
@@ -1231,9 +1242,10 @@ body {
     flex-shrink: 0;
     border: transparent;
     background-color: transparent;
-    background-repeat: no-repeat;
     margin-left: 7.5rem;
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 90%;
 }
 
 .MapReturnButton {
@@ -1244,6 +1256,8 @@ body {
     background-color: transparent;
     cursor: pointer;
     margin-left: 1rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .MapComponent2 {
@@ -1268,13 +1282,19 @@ body {
 
 
 .PinOn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 1.3rem;
     height: 1.4rem;
     flex-shrink: 0;
     border: transparent;
     background-color: transparent;
-    background-repeat: no-repeat;
+
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 80%;
 }
 
 
@@ -1282,10 +1302,12 @@ body {
     display: flex;
     width: 11rem;
     height: 3.9rem;
-    background-repeat: no-repeat;
     border: transparent;
     background-color: transparent;
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 90%;
+    margin-left: 1rem;
 
 
 }
@@ -1294,12 +1316,13 @@ body {
     display: flex;
     width: 11rem;
     height: 3.9rem;
-    background-repeat: no-repeat;
     border: transparent;
     background-color: transparent;
     cursor: pointer;
     margin-top: 1.7rem;
     margin-left: 3.4rem;
+    background-repeat: no-repeat;
+    background-size: 60%;
 }
 
 .SangSu {
@@ -1312,6 +1335,8 @@ body {
     cursor: pointer;
     margin-top: 10.28rem;
     margin-left: 1.5rem;
+    background-repeat: no-repeat;
+    background-size: 80%;
 }
 
 .ListofLocations {
@@ -1321,6 +1346,8 @@ body {
     border: transparent;
     background-color: transparent;
     cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 100%;
     margin-top: 3.6rem;
 }
 
@@ -1549,12 +1576,14 @@ body {
     height: 2.5rem;
     width: 21.4375rem;
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .MakeYourAccount {
     height: 2.5rem;
     width: 21.4375rem;
     background-repeat: no-repeat;
+    background-size: 100%;
 
 }
 
@@ -1620,14 +1649,17 @@ body {
     background-repeat: no-repeat;
     border: transparent;
     background-color: transparent;
-    background-size: 100%;
+    background-size: 80%;
 }
 
 .Add {
     width: 2.25rem;
     height: 2.25rem;
     flex-shrink: 0;
-    margin-left: 1.25rem;
+    margin-left: 1rem;
+    background-color: transparent;
+    background-size: 90%;
+    background-repeat: no-repeat;
 }
 
 .Posts {
@@ -1644,11 +1676,12 @@ body {
     flex-shrink: 0;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+    background-size: 100%;
 }
 
 .PostDetailContent1 {
     width: 24.375rem;
-    height: 59.9375rem;
+    height: 41rem;
     flex-shrink: 0;
     background-color: white;
     display: flex;
@@ -1668,7 +1701,9 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-left: 0.7rem;
+    margin-left: 1rem;
+    background-repeat: no-repeat;
+    background-size: 95%;
 }
 
 .AddPosts {
@@ -1686,7 +1721,7 @@ body {
     height: 4.8125rem;
     flex-shrink: 0;
     margin-bottom: 2rem;
-margin-top: 2rem;
+    margin-top: 2rem;
 }
 
 .What {
@@ -1809,7 +1844,7 @@ margin-top: 2rem;
     font-style: normal;
     font-weight: 300;
     line-height: 110%;
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 3rem;
 }
 
@@ -1818,6 +1853,23 @@ margin-top: 2rem;
     height: 10.86088rem;
     flex-shrink: 0;
     background-size: 100%;
-    margin-top: 3rem;
+    margin-top: 2rem;
+
+}
+
+.DonateButton {
+    width: 9rem;
+    height: 3.75rem;
+    flex-shrink: 0;
+    fill: #EFEFEF;
+    color: #5C2380;
+    text-align: center;
+    font-family: Pretendard-Bold;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 5rem;
+    border-color: transparent;
 
 }

@@ -24,7 +24,7 @@ const Points = () => {
                         My Point
                     </div>
                     <div className="MyPoints2-2">
-                        2500
+                        50,000
                     </div>
                 </div>
             </div>
