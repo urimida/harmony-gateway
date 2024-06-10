@@ -8,7 +8,7 @@ const LoginPage = () => {
 
     const handleLogin = () => {
         alert("Hello. Welcome to Harmony-Gateway.");
-        navigate("/home");
+        navigate("/explaination0");
     };
 
     return (

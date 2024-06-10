@@ -7,6 +7,7 @@ import MyPage from './kind/MyPage';
 import YoungSection from './kind/YoungSection';
 import ElderSection from './kind/ElderSection';
 import FirstPage from './kind/FirstPage';
+import Explaination0 from './kind/Explaination0';
 import Explaination1 from './kind/Explaination1';
 import Explaination2 from './kind/Explaination2';
 import Explaination3 from './kind/Explaination3';
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/who" element={<FirstSelection/>} />
                 <Route path="/young-section" element={<YoungSection />} />
                 <Route path="/elder-section" element={<ElderSection />} />
+                <Route path="/explaination0" element={<Explaination0/>} />
                 <Route path="/explaination1" element={<Explaination1 />} />
                 <Route path="/explaination2" element={<Explaination2 />} />
                 <Route path="/explaination3" element={<Explaination3 />} />

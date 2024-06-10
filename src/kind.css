@@ -178,18 +178,26 @@ body {
     line-height: normal;
     margin-top: 4.87rem;
     text-align: left;
+    
 }
 
 .BrightDoor1 {
     flex-shrink: 0;
     border-radius: 2.5rem;
     margin-top: 2.63rem;
+    width: 21.375rem;
+height: 35.625rem;
+flex-shrink: 0;
+    
 }
 
 .BrightDoor2 {
     flex-shrink: 0;
     border-radius: 2.5rem;
     margin-top: 21rem;
+    width: 21.375rem;
+height: 35.625rem;
+flex-shrink: 0;
 }
 
 .story2 {
@@ -509,9 +517,8 @@ body {
 
 .Explaination {
     width: 24.375rem;
-    height: 52.8125rem;
+    height: 50rem;
     background-size: cover;
-    /* 배경 이미지가 컨테이너에 맞게 조정됨 */
     background-position: center center;
     /* 배경 이미지가 중앙에 위치 */
     background-repeat: no-repeat;
@@ -523,6 +530,8 @@ body {
     align-items: center;
     /* 세로축 중앙 정렬 */
 }
+
+
 
 .Next {
     background: #FFF;
